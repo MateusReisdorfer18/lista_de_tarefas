@@ -1,0 +1,175 @@
+/* -- Fontes -- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+/* -- All --  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, lightblue, white);
+    font-family: 'Kanit', sans-serif;
+    height: 100vw;
+}
+
+.margin{
+    margin-top: 1em;
+}
+
+h2, p{
+    font-weight: 400;
+    color: #2e5903;
+}
+
+p{
+    font-size: .8em;
+}
+
+/* -- Card -- */
+
+.todo{
+    background-color: #85a34e;
+    max-width: 30%;
+    margin: 5em auto;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: -2px 2px 8px #000;
+}
+
+/* -- Header -- */
+
+.todo header{
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.todo header > h1{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* -- Main -- */
+
+.todo main {
+    padding: .5em 0;
+}
+
+/* -- Add Tarefas -- */
+
+.div-add{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding: .5em 0 1em;
+}
+
+.div-add > div:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input{
+    padding: .5em;
+    border: none;
+    border-radius: 13px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+input::placeholder{
+    font-weight: 300;
+}
+
+input:first-child{
+    margin-bottom: .5em;
+}
+
+input:first-child:hover{
+    opacity: .7;
+    transition: .4s;
+}
+
+input:first-child:focus{
+    outline: 0;
+    box-shadow: -2px 2px 8px #000;
+    transition: .4s;
+    background-color: #bab856;
+}
+
+input:first-child:focus::placeholder{
+    color: #000;
+    transition: .4s;
+}
+
+input:nth-child(2):hover{
+    box-shadow: -2px 2px 8px #000;
+    background-color: #06750a;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+}
+
+select{
+    padding: .2em;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 10px;
+}
+
+select:hover{
+    background-color: #bab856;
+    transition: .4s;
+    border: 1px solid #fff;
+}
+
+select:focus{
+    outline: 0;
+}
+
+/* -- Tarefas -- */
+
+.div-tarefas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+
+}
+
+.tarefas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #bab856;
+    padding: .5em;
+    border-radius: 13px;
+    box-shadow: -2px 2px 8px #000;
+}
+
+.card-tarefas{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+button{
+    padding: .5em 1em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -2px 2px 8px #000;
+}
+
+button:hover{
+    background-color: #942509;
+    transition: .2s;
+}
+
+.tarefas div > h2{
+    padding-bottom: .5em;
+}

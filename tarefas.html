@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tarefas.css">
+</head>
+
+<body>
+    <div class="todo">
+        <header>
+            <h1>Tarefas a Fazer</h1>
+        </header>
+        <main>
+            <div id="div-add" class="div-add">
+                <div>
+                    <input type="text" id="inpt-add" placeholder="Adicione uma tarefa">
+                    <input type="button" id="btn-add" value="Adicionar">
+                </div>
+
+                <div>
+                    <select id="tipo">
+                        <option value="Estudo">Estudo</option>
+                        <option value="Trabalho">Trabalho</option>
+                        <option value="Pessoal">Pessoal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="div-tarefas" class="div-tarefas">
+                <!--
+                    <div class="tarefas">
+                        <div class="card-tarefas">
+                            <h2 class="titulo-tarefa">Minha tarefa</h2>
+                            <p class="desc-tarefa">Tipo tarefa</p>
+                        </div>
+                        <button type="button">X</button>
+                    </div>
+                -->
+            </div>   
+        </main>
+    </div>
+    <script src="tarefas.js"></script>
+</body>
+
+</html>
